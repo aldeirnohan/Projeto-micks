@@ -1,0 +1,35 @@
+version: "3"
+services:
+  node-1:
+    build: ./projeto-back-end
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+    networks:
+      - redelocal
+    links:
+    - mysql:mysql
+  quasar:
+    build: ./projeto-front-end
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "8080:8080"
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysqlpw
+    ports:
+      - 3306:3306
+    volumes:
+      - data:/var/lib/mysql
+    networks:
+      - redelocal
+
+volumes:
+  data:
+
+networks:
+  redelocal:
+  
