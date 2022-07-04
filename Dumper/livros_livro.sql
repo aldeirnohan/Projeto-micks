@@ -39,7 +39,7 @@ CREATE TABLE `livro` (
 
 LOCK TABLES `livro` WRITE;
 /*!40000 ALTER TABLE `livro` DISABLE KEYS */;
-INSERT INTO `livro` VALUES (16,'alo','editora teste22','2020'),(17,'Meu cu em perigo 2','Teste','2010'),(21,'ola mundo','editora ola mundo','2022'),(22,'alo','editora teste22','2020'),(23,'ala o','o livro','1564'),(24,'a 7 transa do rei careca','top','2012');
+INSERT INTO `livro` VALUES (16,'alo','editora teste22','2020'),(21,'ola mundo','editora ola mundo','2022'),(22,'alo','editora teste22','2020'),(23,'ala o','o livro','1564');
 /*!40000 ALTER TABLE `livro` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
