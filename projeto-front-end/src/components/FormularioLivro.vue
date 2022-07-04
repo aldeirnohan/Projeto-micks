@@ -17,10 +17,10 @@
     </q-card-section>
 
     <q-card-section>
-      <q-input filled v-model="nome" label="Titulo" />
+      <q-input required filled v-model="nome" label="Titulo" />
       <div class="row q-col-gutter-x-md q-mt-md">
-        <q-input class="col" filled v-model="editora" label="Genero" />
-        <q-input class="col" filled v-model="anoPublicacao" label="Ano" />
+        <q-input required class="col" filled v-model="editora" label="Editora" />
+        <q-input required class="col" filled v-model="anoPublicacao" label="Ano de Publicação" />
       </div>
     </q-card-section>
 
