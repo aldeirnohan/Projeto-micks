@@ -91,7 +91,6 @@ export default defineComponent({
       editarLivro,
       async submit() {
         if (bookId.value) {
-        console.log('AQUIIIIIIIIII');
           try {
             loading2.value = true;
             const result = await request("put", "/livros", {

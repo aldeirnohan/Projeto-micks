@@ -99,11 +99,6 @@ export default defineComponent({
 
   setup() {
     const data = ref([
-      { id: 1, titulo: "Me ajuda", genero: "Drama", ano: "2015" },
-      { id: 2, titulo: "Ai que susto", genero: "Terror", ano: "2017" },
-      { id: 3, titulo: "Saliencias no mar", genero: "Adulto", ano: "2012" },
-      { id: 4, titulo: "Briga de espadas", genero: "Yuri", ano: "2011" },
-      { id: 5, titulo: "Briga de aranhas", genero: "Yaoi", ano: "2019" },
     ]);
 
     const livrosFiltrados = computed(() => {

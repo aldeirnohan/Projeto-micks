@@ -9,7 +9,6 @@ const router = express.Router();
 /* capturando todos os livros */
 router.get('/', async (req, res) => {
   try {
-    console.log('teugeuyfgsrf');
     const alllivros = await db.selectLivros();
     console.log('2');
 
@@ -69,7 +68,6 @@ router.post('/', async (req, res, next) => {
 /* Atualizando livro especifico */
 router.put('/', async (req, res, next) => {
   try {
-    console.log(req.body);
     const { id, nome, editora, anoPublicacao } = req.body;
     const result = await schema.validateAsync({ nome, editora, anoPublicacao });
 
